@@ -9,4 +9,3 @@
         # return the number
 
 def is_divisible_by_5(number):
-    pass

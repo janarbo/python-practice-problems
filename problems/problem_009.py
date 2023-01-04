@@ -12,5 +12,11 @@
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
 
+
 def is_palindrome(word):
-    pass
+    reversed_letter = reversed(word)
+    reversed_word = "".join(reversed_letter)
+    if reversed_word == word:
+        return True
+    else:
+        return False

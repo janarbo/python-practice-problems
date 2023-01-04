@@ -2,5 +2,11 @@
 # of the people in the attendees list is greater than or equal
 # to 50% of the number of people in the members list.
 
+
 def has_quorum(attendees_list, members_list):
-    pass
+    number_attendees = len(attendees_list)
+    number_members = len(members_list)
+    if number_attendees >= (number_members / 2):
+        return True
+    else:
+        return False
