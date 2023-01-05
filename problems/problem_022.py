@@ -9,11 +9,10 @@
 
 def gear_for_day(is_workday, is_sunny):
     gear_list = []
-    if is_sunny is False and is_workday is True:
-        "umbrela" == gear_list
-    elif is_workday is True:
-        "laptop" == gear_list
-    elif is_workday is False:
-        "surfboard" == gear_list
+    if  is_workday and not is_sunny:
+        gear_list.append("umbrella")
+    if is_workday:
+        gear_list.append("laptop")
     else:
-        return False
+        gear_list.append("surfboard")
+    return gear_list
