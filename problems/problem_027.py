@@ -4,5 +4,12 @@
 # If the list is empty, then return None.
 #
 
+
 def max_in_list(values):
-    pass
+    if len(values) == 0:
+        return None
+    max = values[0]
+    for each_value in values:
+        if each_value > max:
+            max = each_value
+    return max

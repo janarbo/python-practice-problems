@@ -12,5 +12,24 @@
 #     and less than 70
 #   * An "F" for any other average
 
+
 def calculate_grade(values):
-    pass
+
+    if len(values) == 0:
+        return None
+    sum = 0
+    for score in values:
+        0 < score < 100
+        sum += score
+    average_score = sum / len(values)
+
+    if average_score >= 90:
+        return "A"
+    if average_score >= 80:
+        return "B"
+    if average_score >= 70:
+        return "C"
+    if average_score >= 60 and average_score <= 70:
+        return "D"
+    else:
+        return "F"

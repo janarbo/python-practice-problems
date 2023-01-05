@@ -7,10 +7,10 @@
 #
 # Pseudocode is available for you
 
+
 def calculate_average(values):
     if len(values) == 0:
         return None
-
 
     sum = 0
 
