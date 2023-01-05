@@ -11,6 +11,7 @@ def calculate_average(values):
     if len(values) == 0:
         return None
 
+
     sum = 0
 
     for each in values:

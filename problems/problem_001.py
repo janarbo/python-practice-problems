@@ -8,5 +8,11 @@
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
 
+
 def minimum_value(value1, value2):
-    pass
+    if value1 < value2:
+        return value1
+    elif value1 == value2:
+        return value1
+    else:
+        return value2
