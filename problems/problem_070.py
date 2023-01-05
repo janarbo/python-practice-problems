@@ -19,6 +19,11 @@
 # Do it without pseudocode, this time, from memory. Don't look
 # at the last one you just wrote unless you really must.
 
-
-
-
+class Book:
+    def __init__(self, author_name, title):
+        self.author_name = author_name
+        self.title = title
+    def get_author(self):
+        return "Author: " + self.author_name
+    def get_title(self):
+        return "Title: "+ self.title

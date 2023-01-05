@@ -18,6 +18,19 @@
 # There is pseudocode for you to guide you.
 
 import math
+class Circle:
+    def __init__(self, radius):
+        if radius < 0:
+            raise ValueError
+
+        self.radius = radius
+
+
+    def calculate_parimeter(self):
+        return 2 * math.pi * self.radius
+
+    def calculate_area(self):
+        return math.pi * pow(self.radius, 2)
 
 # class Circle
     # method initializer with radius

@@ -15,6 +15,8 @@ class BankAccount:
         # If the amount is more than what is in
         # the balance, then raise a ValueError
         self.balance -= amount
+        if amount > self.balance:
+            raise ValueError
 
     def deposit(self, amount):
         self.balance += amount

@@ -26,10 +26,10 @@ class Book:
         self.title = title
 
     def get_author(self):
-        return "Author: " + self.author_name
+        return f"Author: «{self.author_name}»"
 
     def get_title(self):
-        return "Title: " + self.title
+        return f"Title : «{self.title}» "
 
 
 book = Book("Janar", "LA")

@@ -26,5 +26,16 @@
 #
 # Do it without pseudocode, this time, from memory. Don't look
 # at the last one you just wrote unless you really must.
+class Person:
+    def __init__(self, name, hated_food, loved_food):
+        self.name = name
+        self.hated_food = hated_food
+        self.loved_food = loved_food
 
-
+    def taste(self, food_name):
+        if food_name in self.hated_food:
+            return False
+        if food_name in self.loved_food:
+            return True
+        else:
+            return None
