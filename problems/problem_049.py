@@ -9,3 +9,6 @@
 #      y: 4
 #      result: 7
 
+
+def sum_two_numbers(param1, param2):
+    return param1 + param2

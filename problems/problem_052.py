@@ -15,3 +15,14 @@
 #
 # https://docs.python.org/3/library/random.html
 
+import random
+
+
+def generate_lottery_numbers():
+    result = []
+
+    while len(result) < 6:
+        number = random.randint(0, 40)
+        if number not in result:
+            result.append(number)
+    return result

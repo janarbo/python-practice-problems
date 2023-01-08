@@ -9,11 +9,15 @@
 
 
 def calculate_average(values):
+    sum = 0
     if len(values) == 0:
         return None
-
-    sum = 0
 
     for each in values:
         sum += each
     return sum / len(values)
+
+
+values = []
+
+print(calculate_average(values))

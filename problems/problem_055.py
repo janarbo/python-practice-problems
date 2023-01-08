@@ -27,4 +27,17 @@
 #       returns: "IX"
 #     * input: 10
 #       returns:  "X"
-
+def simple_roman(num):
+    lookup = {
+        1: "I",
+        2: "II",  # solution
+        3: "III",  # solution
+        4: "IV",  # solution
+        5: "V",  # solution
+        6: "VI",  # solution
+        7: "VII",  # solution
+        8: "VIII",  # solution
+        9: "IX",  # solution
+        10: "X",  # solution
+    }
+    return lookup[num]

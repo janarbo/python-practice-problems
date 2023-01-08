@@ -12,5 +12,21 @@
 #
 # Look up the zip function to help you with this problem.
 
+
 def pairwise_add(list1, list2):
-    pass
+
+    if len(list1) == len(list2):
+        sum = 0
+        result_list = []
+        for each in zip(list1, list2):
+            each_value = int(each)
+            sum += each_value
+        result_list.append(each_value)
+    return result_list
+
+
+def pairwise_add(list1, list2):
+    result = []
+    for value1, value2 in zip(list1, list2):
+        result.append(value1 + value2)
+    return result

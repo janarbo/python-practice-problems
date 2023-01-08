@@ -12,9 +12,8 @@
 
 
 def remove_duplicate_letters(s):
-
     result = ""
     for letter in s:
         if letter not in s:
-            result.append(letter)
+            result = result + letter
     return result

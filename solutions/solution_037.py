@@ -26,9 +26,10 @@
 # Do it without pseudocode, this time, from memory. Don't look
 # at the last one you just wrote unless you really must.
 
+
 def pad_left(number, length, pad):
-    s = str(number)                                     # solution
-    while len(s) < length:                              # solution
-        s = pad + s                                     # solution
-    return s                                            # solution
+    s = str(number)  # solution
+    while len(s) < length:  # solution
+        s = pad + s  # solution
+    return s  # solution
     # pass                                              # problem

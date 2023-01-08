@@ -13,7 +13,16 @@
 #   * 5 returns 0+2+4+6+8+10=30
 #
 # Write out some pseudocode before trying to solve the
-# problem to get a good feel for how to solve it.
+# problem to get a good feel for how to solve it.python -m pytest -k "033"
+
 
 def sum_of_first_n_even_numbers(n):
-    pass
+    if n < 0:
+        return None
+
+    sum = 0
+
+    for number in range(n * 2 + 1):
+        if number % 2 == 0:
+            sum += number
+    return sum

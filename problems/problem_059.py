@@ -15,3 +15,10 @@
 #     and 7 into a list
 #   * Use random.choice to select one
 
+import random
+
+
+def specific_random():
+    x = random.randint(10, 500)
+    if x % 35 == 0:
+        return x

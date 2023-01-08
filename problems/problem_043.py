@@ -19,5 +19,10 @@
 #
 # Look up the enumerate function to help you with this problem.
 
+
 def find_indexes(search_list, search_term):
-    pass
+    result = []
+    for index, value in enumerate(search_list):
+        if value == search_term:
+            result.append(index)
+    return result

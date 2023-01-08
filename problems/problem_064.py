@@ -13,3 +13,12 @@
 #                lows:  [72, 78, 70, 70]
 #       result:         [ 8,  3,  5, 10]
 
+
+def temperature_differences(highs, lows):
+    new_list = []
+    if len(highs) == len(lows):
+        sum = 0
+        for high, low in highs, lows:
+            sum = high - low
+        new_list.append(sum)
+    return new_list

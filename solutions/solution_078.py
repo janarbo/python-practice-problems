@@ -20,14 +20,15 @@
 
 import math
 
-class Circle:                                       # solution
-    def __init__(self, radius):                     # solution
-        if radius < 0:                              # solution
-            raise ValueError                        # solution
-        self.radius = radius                        # solution
 
-    def calculate_perimeter(self):                  # solution
-        return 2 * math.pi * self.radius            # solution
+class Circle:  # solution
+    def __init__(self, radius):  # solution
+        if radius < 0:  # solution
+            raise ValueError  # solution
+        self.radius = radius  # solution
 
-    def calculate_area(self):                       # solution
-        return math.pi * pow(self.radius, 2)        # solution
+    def calculate_perimeter(self):  # solution
+        return 2 * math.pi * self.radius  # solution
+
+    def calculate_area(self):  # solution
+        return math.pi * pow(self.radius, 2)  # solution

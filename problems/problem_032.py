@@ -14,6 +14,14 @@
 #
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
+# count from 0 to number_limit and then add these numbers
+# range(limit+1)?
+
 
 def sum_of_first_n_numbers(limit):
-    pass
+    if limit < 0:
+        return None
+    sum = 0
+    for number in range(limit + 1):
+        sum += number
+    return sum

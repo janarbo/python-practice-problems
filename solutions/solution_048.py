@@ -19,18 +19,18 @@
 
 ## FUNCTION PSEUDOCODE
 # function count_word_frequencies(sentence):
-def count_word_frequencies(sentence):               # solution
+def count_word_frequencies(sentence):  # solution
     # words = split the sentence
-    words = sentence.split()                        # solution
+    words = sentence.split()  # solution
     # counts = new empty dictionary
-    counts = {}                                     # solution
+    counts = {}  # solution
     # for each word in words
-    for word in words:                              # solution
+    for word in words:  # solution
         # if the word is not in counts
-        if word not in counts:                      # solution
+        if word not in counts:  # solution
             # counts[word] = 0
-            counts[word] = 0                        # solution
+            counts[word] = 0  # solution
         # add one to counts[word]
-        counts[word] += 1                           # solution
+        counts[word] += 1  # solution
     # return counts
-    return counts                                   # solution
+    return counts  # solution
