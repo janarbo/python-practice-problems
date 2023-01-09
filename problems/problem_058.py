@@ -22,7 +22,4 @@
 #
 # You may want to look up the ".strip()" method for the string.
 def group_cities_by_state(cities):
-    city_state_dict = {}
-    for city in cities:
-        seperated_city = split_city[0]
-        state =
+  in

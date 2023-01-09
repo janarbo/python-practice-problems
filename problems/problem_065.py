@@ -17,3 +17,10 @@
 #
 # You may want to look at the built-in "abs" function
 
+def biggest_gap(numbers):
+     largest_gap = abs(numbers[1] - numbers[0])
+     for i in range(0, len(numbers)-1):
+         gap = abs(numbers[i+1]- numbers[i])
+         if gap > largest_gap:
+          largest_gap = gap
+     return largest_gap

@@ -19,6 +19,11 @@ import random
 
 
 def specific_random():
-    x = random.randint(10, 500)
-    if x % 35 == 0:
-        return x
+    nums = []
+    for each in range(10,501):
+        nums.append(each)
+    new_list = []
+    for each in nums:
+        if each % 5 == 0 and each % 7 == 0:
+            new_list.append(each)
+    return random.choice(new_list)
