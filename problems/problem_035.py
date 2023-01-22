@@ -23,5 +23,13 @@
 # Do it without pseudocode, this time, from memory. Don't look
 # at the last one you just wrote unless you really must.
 
+
 def count_letters_and_digits(s):
-    pass
+    value_1 = 0
+    value_2 = 0
+    for each in s:
+        if each.isalpha():
+            value_1 += 1
+        if each.isdigit():
+            value_2 += 1
+    return value_1, value_2

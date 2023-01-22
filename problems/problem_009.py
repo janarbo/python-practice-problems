@@ -14,9 +14,8 @@
 
 
 def is_palindrome(word):
-    reversed_letter = reversed(word)
-    reversed_word = "".join(reversed_letter)
-    if reversed_word == word:
+    palindrome_word = "".join(reversed(word))
+    if palindrome_word == word:
         return True
     else:
         return False

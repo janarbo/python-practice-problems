@@ -12,5 +12,10 @@
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
 
+
 def max_of_three(value1, value2, value3):
-    pass
+    max = value1
+    for each in value1, value2, value3:
+        if each >= max:
+            max = each
+    return max

@@ -17,5 +17,21 @@
 #
 # Remember that a dictionary has the ".get" method on it.
 
+
+# def translate(key_list, dictionary):
+#     result = []
+
+#     for each in key_list:
+#         if each not in dictionary:
+#             result.append(None)
+#         else:
+#             result.append(dictionary[each])
+
+
+#     return result
+
 def translate(key_list, dictionary):
-    pass
+    result = []
+    for each in key_list:
+        result.append(dictionary.get(each))
+    return result

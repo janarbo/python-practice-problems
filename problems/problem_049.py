@@ -9,3 +9,5 @@
 #      y: 4
 #      result: 7
 
+def sum_two_numbers(parm1, parm2):
+    return parm1 + parm2

@@ -26,3 +26,12 @@
             # counts[word] = 0
         # add one to counts[word]
     # return counts
+def count_word_frequencies(sentence):
+    dic = {}
+    split = sentence.split()
+    for each in split:
+        if each not in dic:
+            dic[each] = 1
+        else:
+            dic[each] += 1
+    return dic

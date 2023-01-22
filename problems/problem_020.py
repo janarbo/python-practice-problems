@@ -4,9 +4,7 @@
 
 
 def has_quorum(attendees_list, members_list):
-    number_attendees = len(attendees_list)
-    number_members = len(members_list)
-    if number_attendees >= (number_members / 2):
+    if len(attendees_list) >= (len(members_list) / 2):
         return True
     else:
         return False

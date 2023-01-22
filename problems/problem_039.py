@@ -12,5 +12,9 @@
 #   * input:  {"one": 1, "two": 2, "three": 3}
 #     output: {1: "one", 2: "two", 3: "three"}
 
+
 def reverse_dictionary(dictionary):
-    pass
+    new = {}
+    for x,y in dictionary.items():
+        new[y] = x
+    return new

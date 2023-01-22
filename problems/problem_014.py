@@ -12,14 +12,12 @@
 
 
 def can_make_pasta(ingredients):
-    ingredients_list = []
-    each_ingredient = ingredients_list[0]
-    for each_ingredient in ingredients:
-        if (
-            each_ingredient == "flours"
-            and each_ingredient == "eggs"
-            and each_ingredient == "oil"
-        ):
-            return True
-        else:
-            return False
+
+    if (
+        "flour" in ingredients
+        and "eggs" in ingredients
+        and "oil" in ingredients
+    ):
+        return True
+    else:
+        return False

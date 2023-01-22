@@ -7,5 +7,12 @@
 #
 # Pseudocode is available for you
 
+
 def calculate_average(values):
-    pass
+    if len(values) == 0:
+        return None
+    sum = 0
+
+    for each in values:
+        sum += each
+    return sum / len(values)
