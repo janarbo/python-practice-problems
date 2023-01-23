@@ -9,7 +9,7 @@
 #
 # The is_inside_bounds function returns true if all of
 # the following are true
-#   * x is greater than or equal to rect_x
+#   * x is greater than or equal to rect_xs
 #   * y is greater than or equal to rect_y
 #   * x is less than or equal to rect_x + rect_width
 #   * y is less than or equal to rect_y + rect_height

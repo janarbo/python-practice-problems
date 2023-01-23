@@ -15,3 +15,9 @@
 #    * input:   "basia_farid+test@yahoo.com"
 #      returns: "basia_farid+test"
 
+
+def username_from_email(email_address):
+
+    email_list = email_address.split("@")
+
+    return email_list[0]
