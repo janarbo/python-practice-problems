@@ -12,6 +12,7 @@
 # The string object has some methods that you may want to use,
 # like ".isalpha", ".isdigit", ".isupper", and ".islower"
 
+
 def check_password(password):
     is_lower = False
     is_upper = False
@@ -28,9 +29,10 @@ def check_password(password):
         elif char == "$" or char == "!" or char == "@":
             is_speacial = True
     return (
-    len(password) >= 6
-    and len(password) <= 12
-    and is_lower
-    and is_upper
-    and is_digit
-    and is_speacial)
+        len(password) >= 6
+        and len(password) <= 12
+        and is_lower
+        and is_upper
+        and is_digit
+        and is_speacial
+    )

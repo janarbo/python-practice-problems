@@ -12,18 +12,15 @@
 #    * input: [1, 2, 3]
 #      result: [1, 2], [3]
 
-def halve_the_list(list):
-    list_1 = []
-    list_2 = []
 
-    if len(list) % 2 == 0:
-        for each in list[range(len(list)//2 + 1)]:
-            list_1.append(each)
-        for each in list[(len(list)//2), len(list)]:
-            list_1.append(each)
-    if len(list) % 2 == 1:
-        for each in list[range(int(len(list)//2 + 2) )]:
-            list_1.append(each)
-        for each in list[range(int(len(list)//2 + 1)), len(list)]:
-            list_2.append(each)
-    return list_1, list_2
+def halve_the_list(list):
+    list1 = []
+    list2 = []
+    len_list1 = len(list) // 2 + len(list) % 2
+
+    for i in range(len_list1):
+        list1.append(list[i])
+    for i in range(len(list) // 2):
+        index = len_list1 + i
+        list2.append(list[index])
+    return list1, list2
