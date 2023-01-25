@@ -15,3 +15,4 @@
 #     and 7 into a list
 #   * Use random.choice to select one
 
+def specific_random():

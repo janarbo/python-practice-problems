@@ -15,3 +15,7 @@
 #       parameter 2: 0
 #     returns: "92380"
 
+
+def num_concat(parameter_1, parameter_2):
+    result = str(parameter_1) + str(parameter_2)
+    return result

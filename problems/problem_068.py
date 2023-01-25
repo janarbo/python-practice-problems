@@ -37,3 +37,8 @@
             # return True
         # otherwise
             # return None
+class Person:
+    def __init__(self, name, hated_foods, loved_foods):
+        self.name = name
+        self.hated_foods = hated_foods
+        self.loved_foods = loved_foods
